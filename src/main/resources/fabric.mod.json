@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "craftables",
+	"version": "${version}",
+	"name": "TestMod",
+	"description": "Made just for testing things",
+	"authors": [
+		"Zakyy"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/craftables/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.zakyy.testmod.TestMod"
+		],
+		"client": [
+			"net.zakyy.testmod.TestModClient"
+		],
+		"fabric-datagen": [
+			"net.zakyy.testmod.TestModDataGenerator"
+		]
+	},
+	"mixins": [
+		"testmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
